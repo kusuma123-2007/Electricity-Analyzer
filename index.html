@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Electricity Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">⚡ Smart Electricity Consumption Analyzer</h1>
+
+<!-- INPUT BOX -->
+<div class="card">
+    <h2>Add Appliance</h2>
+    <input id="name" placeholder="Appliance name (Fan, AC...)">
+    <input id="watt" type="number" placeholder="Watt (e.g. 75)">
+    <input id="hours" type="number" placeholder="Hours per day">
+    <button onclick="addItem()">Add Appliance</button>
+</div>
+
+<!-- LIST -->
+<div class="card">
+    <h2>Your Appliances</h2>
+    <ul id="list"></ul>
+</div>
+
+<!-- RESULT -->
+<div class="card result">
+    <h2>Total Units per Month</h2>
+    <p id="units">0 Units</p>
+
+    <h2>Estimated Bill</h2>
+    <p id="bill">₹0</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
